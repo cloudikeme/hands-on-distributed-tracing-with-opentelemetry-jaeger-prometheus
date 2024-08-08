@@ -1,3 +1,101 @@
+distributed-tracing-demo/
+│
+├── .github/
+│   └── workflows/
+│       └── build_and_push_images.yml
+│
+├── app/
+│   ├── backend1/
+│   │   ├── Dockerfile
+│   │   ├── app.py
+│   │   ├── requirements.txt
+│   │   └── run.sh
+│   ├── backend2/
+│   │   ├── gradle/
+│   │   │   ├── wrapper/
+│   │   │   │   ├── gradle-wrapper.jar
+│   │   │   │   └── gradle-wrapper.properties
+│   │   ├── src/
+│   │   │   ├── main/
+│   │   │   │   ├── java/
+│   │   │   │   │   └── io/
+│   │   │   │   │       └── opentelemetry/
+│   │   │   │   │           ├── DiceApplication.java
+│   │   │   │   │           └── RollController.java
+│   │   │   └── resources/
+│   │   │       └── application.properties
+│   │   ├── Dockerfile
+│   │   ├── build.gradle
+│   │   ├── gradlew
+│   │   ├── gradlew.bat
+│   │   ├── run.sh
+│   │   └── settings.gradle
+│   ├── backend3/
+│   │   ├── Properties/
+│   │   │   └── launchSettings.json
+│   │   ├── Dockerfile
+│   │   ├── Program.cs
+│   │   ├── appsettings.Development.json
+│   │   ├── appsettings.json
+│   │   └── backend3.csproj
+│   ├── frontend/
+│   │   ├── Dockerfile
+│   │   ├── index.js
+│   │   ├── instrument.js
+│   │   ├── package-lock.json
+│   │   ├── package.json
+│   │   └── run.sh
+│   └── loadgen/
+│       ├── Dockerfile
+│       └── run.sh
+│
+├── .gitignore
+├── Dockerfile
+├── README.md
+├── docker-compose.yml
+├── instrumentation.yaml
+├── k8s/
+│   ├── annotated/
+│   │   └── k8s-annotated.yaml
+│   └── manifests/
+│       ├── k8s.yaml
+│       ├── 01-backend.yaml
+│       ├── 02-collector.yaml
+│       ├── 03-collector-prom-cr.yaml
+│       ├── 04-servicemonitors.yaml
+│       └── 05-collector-daemonset.yaml
+├── otel-env/
+│   └── # (Placeholder for OpenTelemetry Environment configurations if needed)
+└── scripts/
+    ├── setup.sh
+    └── deploy.sh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ```
 ├── loadgen
